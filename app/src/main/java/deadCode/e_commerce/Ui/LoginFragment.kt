@@ -27,7 +27,7 @@ class LoginFragment : Fragment() {
     private fun forgetPassword() {
         binding.tvForgetPassword.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flFragment, ForgetPasswordFragment())
+                replace(R.id.flMainFragment, ForgetPasswordFragment())
                     .addToBackStack("replacement")
                     .commit()
             }
@@ -38,7 +38,7 @@ class LoginFragment : Fragment() {
     private fun btnLogin() {
         binding.btnLogin.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flFragment, VisualSearchFragment())
+                replace(R.id.flMainFragment, VisualSearchFragment())
                     .addToBackStack("replacement")
                     .commit()
             }

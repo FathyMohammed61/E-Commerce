@@ -30,7 +30,7 @@ class SignUpFragment : Fragment() {
     private fun intentToLogin() {
         binding.tvHaveAnAccount.setOnClickListener {
             parentFragmentManager.beginTransaction().apply {
-                replace(R.id.flFragment, LoginFragment())
+                replace(R.id.flMainFragment, LoginFragment())
                     .addToBackStack("replacement")
                     .commit()
             }
@@ -51,7 +51,7 @@ class SignUpFragment : Fragment() {
                 binding.IdPasswordSignup.error = null
                 binding.IdEmailSignup.error = null
                 parentFragmentManager.beginTransaction().apply {
-                    replace(R.id.flFragment, LoginFragment())
+                    replace(R.id.flMainFragment, LoginFragment())
                         .addToBackStack("replacement")
                         .commit()
                 }

@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun toggleFragment() {
         supportFragmentManager.beginTransaction().apply {
-            replace(R.id.flFragment, SignUpFragment())
+            replace(R.id.flMainFragment, SignUpFragment())
                 .commit()
         }
     }

@@ -28,7 +28,6 @@ class VisualSearchFragment : Fragment() {
         return binding.root
     }
 
-
     //-------------------------upLoadPhoto------------------//
     private fun upLoadPhoto() {
         binding.btnUploadImage.setOnClickListener {
