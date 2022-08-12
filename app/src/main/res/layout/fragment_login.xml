@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_ground_layout"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    tools:context=".Ui.LoginFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="106dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="55sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:textColorHint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/IdEmailLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/IdPasswordLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvForgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="16dp"
+            android:text="Forget your password"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_background"
+            android:text="LOGIN"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:text="Or sign up with social account"
+            android:textColor="#222222"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/goLogin"
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_2" />
+
+            <ImageView
+                android:id="@+id/fcLogin"
+                android:layout_width="130dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/img_3" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

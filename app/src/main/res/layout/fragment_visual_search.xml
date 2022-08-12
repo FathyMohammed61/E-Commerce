@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:orientation="vertical"
+    android:paddingHorizontal="12dp"
+    tools:context=".Ui.VisualSearchFragment">
+
+    <TextView
+        android:layout_width="329dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="262dp"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="5sp"
+        android:text="Search for an outfit by taking a photo or uploading an image"
+        android:textAppearance="@style/search_for_" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTakeAPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/button_background"
+        android:text="TAKE A PHOTO"
+        android:textColor="@color/white" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/upload_background"
+        android:text="UPLOAD AN IMAGE"
+        android:textColor="@color/white" />
+
+
+
+</LinearLayout>

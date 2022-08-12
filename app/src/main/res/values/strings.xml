@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ecommerce</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_password">password is less than 8 characters</string>
+    <string name="error_mail">Enter your mail</string>
+    <string name="errorPassword">Enter Password</string>
+    <string name="errorName">This value required</string>
+</resources>
