@@ -13,7 +13,7 @@ import deadCode.e_commerce.databinding.FragmentSignUpBinding
 
 class SignUpFragment : Fragment() {
 
-    lateinit var binding: FragmentSignUpBinding
+    private lateinit var binding: FragmentSignUpBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

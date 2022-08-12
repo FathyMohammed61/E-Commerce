@@ -16,7 +16,7 @@ import deadCode.e_commerce.databinding.FragmentVisualSearchBinding
 
 class VisualSearchFragment : Fragment() {
 
-    lateinit var binding: FragmentVisualSearchBinding
+ private   lateinit var binding: FragmentVisualSearchBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -11,7 +11,7 @@ import deadCode.e_commerce.databinding.FragmentForgetPasswordBinding
 
 class ForgetPasswordFragment : Fragment() {
 
-    lateinit var binding: FragmentForgetPasswordBinding
+    private  lateinit var binding: FragmentForgetPasswordBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
