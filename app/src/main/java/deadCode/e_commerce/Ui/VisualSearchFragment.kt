@@ -1,5 +1,3 @@
-@file:Suppress("DEPRECATION")
-
 package deadCode.e_commerce.Ui
 
 
@@ -16,7 +14,7 @@ import deadCode.e_commerce.databinding.FragmentVisualSearchBinding
 
 class VisualSearchFragment : Fragment() {
 
- private   lateinit var binding: FragmentVisualSearchBinding
+    private lateinit var binding: FragmentVisualSearchBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

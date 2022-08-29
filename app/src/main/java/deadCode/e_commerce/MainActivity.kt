@@ -7,7 +7,8 @@ import deadCode.e_commerce.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private  lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun toggleFragment() {
+
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flMainFragment, SignUpFragment())
                 .commit()
