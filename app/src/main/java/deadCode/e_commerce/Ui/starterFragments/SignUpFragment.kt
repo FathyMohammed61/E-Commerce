@@ -1,4 +1,4 @@
-package deadCode.e_commerce.Ui
+package deadCode.e_commerce.Ui.starterFragments
 
 
 import android.content.Intent
@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
+import deadCode.e_commerce.Ui.VisualSearchFragment
 import deadCode.e_commerce.databinding.FragmentSignUpBinding
 
 class SignUpFragment : Fragment() {
@@ -82,7 +83,7 @@ class SignUpFragment : Fragment() {
     private fun joinWithFaceBook() {
         binding.apply {
             fcSignUp.setOnClickListener {
-               val intent= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/"))
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/"))
                 startActivity(intent)
             }
         }

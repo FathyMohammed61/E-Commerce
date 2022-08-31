@@ -1,4 +1,4 @@
-package deadCode.e_commerce.Ui
+package deadCode.e_commerce.Ui.starterFragments
 
 
 import android.app.NotificationChannel
