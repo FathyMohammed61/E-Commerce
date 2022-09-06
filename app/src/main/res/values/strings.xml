@@ -5,4 +5,5 @@
     <string name="error_mail">Enter your mail</string>
     <string name="errorPassword">Enter Password</string>
     <string name="errorName">This value required</string>
+    <string name="search_for_an_outfit_by_taking_a_photo_or_uploading_an_image"><u>Search for an outfit by taking a photo or uploading an image</u></string>
 </resources>

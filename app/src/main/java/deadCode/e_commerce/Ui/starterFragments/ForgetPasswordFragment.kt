@@ -20,9 +20,9 @@ class ForgetPasswordFragment : Fragment() {
 
     private lateinit var binding: FragmentForgetPasswordBinding
 
-    val CHANNEL_ID = "CHANNEL_ID"
-    val CHANNEL_NAME = "CHANNEL_NAME"
-    val NOYIF_ID = 0
+//    val CHANNEL_ID = "CHANNEL_ID"
+//    val CHANNEL_NAME = "CHANNEL_NAME"
+//    val NOYIF_ID = 0
 
 
     override fun onCreateView(
@@ -34,26 +34,26 @@ class ForgetPasswordFragment : Fragment() {
         return binding.root
     }
 
-
-    private fun createNotificationChannel() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            val channel = NotificationChannel(
-                CHANNEL_ID,
-                CHANNEL_NAME,
-                NotificationManager.IMPORTANCE_DEFAULT
-            ).apply {
-                lightColor = Color.BLUE
-                enableLights(true)
-                enableVibration(true)
-            }
-
-            val manager =
-                this.activity?.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-            manager.createNotificationChannel(channel)
-        }
-
-    }
-
+//
+//    private fun createNotificationChannel() {
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+//            val channel = NotificationChannel(
+//                CHANNEL_ID,
+//                CHANNEL_NAME,
+//                NotificationManager.IMPORTANCE_DEFAULT
+//            ).apply {
+//                lightColor = Color.BLUE
+//                enableLights(true)
+//                enableVibration(true)
+//            }
+//
+//            val manager =
+//                this.activity?.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
+//            manager.createNotificationChannel(channel)
+//        }
+//
+//    }
+//
 
     private fun sendPassword() {
         binding.apply {
@@ -61,7 +61,6 @@ class ForgetPasswordFragment : Fragment() {
                 if (IdForgetPassword.text!!.isEmpty()) {
                     Toast.makeText(activity, "PLEASE ENTER YOUR MAIL", Toast.LENGTH_LONG).show()
                 } else {
-                    createNotificationChannel()
                     Log.d("noyi", "clicled")
                 }
 

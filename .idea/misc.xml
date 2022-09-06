@@ -3,11 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/drawable-anydpi/ic_search.xml" value="0.1665" />
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/drawable/button_background.xml" value="0.1665" />
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/drawable/upload_background.xml" value="0.1665" />
         <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/activity_main.xml" value="0.2734375" />
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/activity_main_pages.xml" value="0.25" />
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/fragment_find_similer_results.xml" value="0.2734375" />
         <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/fragment_forget_password.xml" value="0.2734375" />
         <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/fragment_login.xml" value="0.2692307692307692" />
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/fragment_main_pages.xml" value="0.2734375" />
         <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/fragment_sign_up.xml" value="0.2734375" />
-        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/fragment_visual_search.xml" value="0.2074074074074074" />
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/layout/fragment_visual_search.xml" value="0.25" />
+        <entry key="..\:/Users/FathyMohamed/Documents/GitHub/E-Commerce/app/src/main/res/menu/bnv_menu.xml" value="0.75" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2625" />
       </map>
     </option>

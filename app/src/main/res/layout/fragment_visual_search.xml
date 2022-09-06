@@ -8,15 +8,15 @@
     app:chainUseRtl="false"
     android:orientation="vertical"
     android:paddingHorizontal="12dp"
-    tools:context=".Ui.VisualSearchFragment">
+    tools:context=".Ui.visualFragments.VisualSearchFragment">
 
     <TextView
-        android:layout_width="329dp"
-        android:layout_height="87dp"
+        android:layout_width="390dp"
+        android:layout_height="75dp"
         android:layout_marginTop="262dp"
-        android:gravity="center_vertical"
+        android:gravity="start"
         android:lineSpacingExtra="5sp"
-        android:text="Search for an outfit by taking a photo or uploading an image"
+        android:text="@string/search_for_an_outfit_by_taking_a_photo_or_uploading_an_image"
         android:textAppearance="@style/search_for_" />
 
     <androidx.appcompat.widget.AppCompatButton

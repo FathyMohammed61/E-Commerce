@@ -1,4 +1,4 @@
-package deadCode.e_commerce.Ui
+package deadCode.e_commerce.Ui.visualFragments
 
 
 import android.app.Activity.RESULT_OK
@@ -12,6 +12,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.databinding.FragmentVisualSearchBinding
 
+@Suppress("DEPRECATION")
 class VisualSearchFragment : Fragment() {
 
     private lateinit var binding: FragmentVisualSearchBinding
@@ -42,7 +43,6 @@ class VisualSearchFragment : Fragment() {
         binding.btnTakeAPhoto.setOnClickListener {
             Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
                 startActivityForResult(it, 1)
-
             }
         }
 
@@ -51,16 +51,18 @@ class VisualSearchFragment : Fragment() {
     //----------------------------onActivityResult--------------------------------///
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+
         super.onActivityResult(requestCode, resultCode, data)
 
         if (requestCode == 0 && resultCode == RESULT_OK) {
             val uri = data?.data
-        }
 
-        if (requestCode == 1 && resultCode == RESULT_OK) {
-            val imageBitmap = data?.extras?.get("data") as Bitmap
 
         }
+//        if (requestCode == 1 && resultCode == RESULT_OK) {
+//            val imageBitmap = data?.extras?.get("data") as Bitmap
+//
+//        }
     }
 
 }
