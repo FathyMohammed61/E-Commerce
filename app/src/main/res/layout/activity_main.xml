@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:chainUseRtl="false"
-    tools:context=".Ui.activities.MainActivity">
+    tools:context=".ui.activities.MainActivity">
 
     <FrameLayout
         android:id="@+id/flMainFragment"

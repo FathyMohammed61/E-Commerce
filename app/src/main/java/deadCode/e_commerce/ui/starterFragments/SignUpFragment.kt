@@ -1,4 +1,4 @@
-package deadCode.e_commerce.Ui.starterFragments
+package deadCode.e_commerce.ui.starterFragments
 
 
 import android.content.Intent
@@ -10,9 +10,10 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
-import deadCode.e_commerce.Ui.visualFragments.VisualSearchFragment
 import deadCode.e_commerce.controller.starterController.SignUpController
 import deadCode.e_commerce.databinding.FragmentSignUpBinding
+import deadCode.e_commerce.model.ComData.NavigationHost
+import deadCode.e_commerce.ui.mainPagesFragments.MainPagesFragment
 
 class SignUpFragment : Fragment() {
 
@@ -26,7 +27,6 @@ class SignUpFragment : Fragment() {
         naveToLogin()
         intentToLogin()
         joinWithFaceBook()
-
         return binding.root
     }
 
@@ -53,11 +53,7 @@ class SignUpFragment : Fragment() {
                         .show()
                 } else {
                     IdPasswordSignup.error = null
-                    parentFragmentManager.beginTransaction().apply {
-                        replace(R.id.flMainFragment, VisualSearchFragment())
-                            .addToBackStack("replacement")
-                            .commit()
-                    }
+                    (activity as NavigationHost).navigateTo(MainPagesFragment(), false)
                 }
             }
         }

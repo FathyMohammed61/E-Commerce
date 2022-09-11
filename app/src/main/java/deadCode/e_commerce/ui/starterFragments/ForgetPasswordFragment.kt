@@ -1,11 +1,6 @@
-package deadCode.e_commerce.Ui.starterFragments
+package deadCode.e_commerce.ui.starterFragments
 
 
-import android.app.NotificationChannel
-import android.app.NotificationManager
-import android.content.Context.NOTIFICATION_SERVICE
-import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
