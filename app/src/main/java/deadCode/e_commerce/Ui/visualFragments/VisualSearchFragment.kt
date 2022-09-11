@@ -1,4 +1,4 @@
-package deadCode.e_commerce.ui.visualFragments
+package deadCode.e_commerce.Ui.visualFragments
 
 
 import android.app.Activity.RESULT_OK

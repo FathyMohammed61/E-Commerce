@@ -1,4 +1,4 @@
-package deadCode.e_commerce.ui.starterFragments
+package deadCode.e_commerce.Ui.starterFragments
 
 
 import android.content.Intent
@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
 import deadCode.e_commerce.controller.starterController.SignUpController
 import deadCode.e_commerce.databinding.FragmentSignUpBinding
-import deadCode.e_commerce.model.ComData.NavigationHost
-import deadCode.e_commerce.ui.mainPagesFragments.MainPagesFragment
+import deadCode.e_commerce.Ui.mainPagesFragments.MainPagesFragment
+
 
 class SignUpFragment : Fragment() {
 
@@ -53,12 +53,13 @@ class SignUpFragment : Fragment() {
                         .show()
                 } else {
                     IdPasswordSignup.error = null
-                    (activity as NavigationHost).navigateTo(MainPagesFragment(), false)
+                    parentFragmentManager.beginTransaction().apply {
+                        replace(R.id.flMainFragment, MainPagesFragment())
+                        commit()
+                    }
                 }
             }
         }
-
-
     }
 
     /// joinWithFaceBook////

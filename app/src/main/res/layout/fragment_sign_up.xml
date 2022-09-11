@@ -8,7 +8,7 @@
     android:background="@drawable/back_ground_layout"
     android:orientation="vertical"
     android:paddingHorizontal="12dp"
-    tools:context=".ui.starterFragments.SignUpFragment">
+    tools:context=".Ui.starterFragments.SignUpFragment">
 
     <LinearLayout
         android:layout_width="match_parent"

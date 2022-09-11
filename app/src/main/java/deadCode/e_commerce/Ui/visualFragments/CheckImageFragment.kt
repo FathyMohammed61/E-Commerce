@@ -1,4 +1,4 @@
-package deadCode.e_commerce.ui.visualFragments
+package deadCode.e_commerce.Ui.visualFragments
 
 import android.content.Intent
 import android.net.Uri

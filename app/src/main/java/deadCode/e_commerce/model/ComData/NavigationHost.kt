@@ -6,5 +6,4 @@ interface NavigationHost {
 
     fun navigateTo(fragment: Fragment, addToBackstack: Boolean)
 
-    // (activity as NavigationHost).navigateTo(ProductGridFragment(), false)
 }

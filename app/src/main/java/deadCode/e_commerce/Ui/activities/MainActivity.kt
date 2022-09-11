@@ -1,9 +1,9 @@
-package deadCode.e_commerce.ui.activities
+package deadCode.e_commerce.Ui.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import deadCode.e_commerce.R
-import deadCode.e_commerce.ui.starterFragments.SignUpFragment
+import deadCode.e_commerce.Ui.starterFragments.SignUpFragment
 import deadCode.e_commerce.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

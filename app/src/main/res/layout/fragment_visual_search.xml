@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:paddingHorizontal="12dp"
     app:chainUseRtl="false"
-    tools:context=".ui.visualFragments.VisualSearchFragment">
+    tools:context=".Ui.visualFragments.VisualSearchFragment">
 
     <TextView
         android:id="@+id/textView2"
@@ -36,6 +36,5 @@
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

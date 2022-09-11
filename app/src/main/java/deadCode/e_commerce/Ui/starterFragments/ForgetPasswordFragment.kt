@@ -1,4 +1,4 @@
-package deadCode.e_commerce.ui.starterFragments
+package deadCode.e_commerce.Ui.starterFragments
 
 
 import android.os.Bundle
