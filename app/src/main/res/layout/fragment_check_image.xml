@@ -13,13 +13,13 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_okImage"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+  />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_okImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/button_background"
         android:text="Ok"
         app:layout_constraintBottom_toBottomOf="parent"

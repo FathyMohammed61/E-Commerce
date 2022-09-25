@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
+import deadCode.e_commerce.Ui.mainPagesFragments.MainPagesFragment
 import deadCode.e_commerce.databinding.FragmentVisualSearchBinding
 import deadCode.e_commerce.model.ComData.comImage.imageRegister
 
@@ -30,11 +31,7 @@ open class VisualSearchFragment : Fragment() {
     private fun upLoadPhoto() {
         binding.btnUploadImage.setOnClickListener {
             Intent(Intent.ACTION_GET_CONTENT).also {
-                it.type = "$imageRegister"
-                parentFragmentManager.beginTransaction().apply {
-                    replace(R.id.flMainFragment, CheckImageFragment())
-                    commit()
-                }
+                it.type = imageRegister
                 startActivityForResult(it, 0)
             }
         }
@@ -49,6 +46,26 @@ open class VisualSearchFragment : Fragment() {
         if (requestCode == 0 && resultCode == RESULT_OK) {
             val uri = data?.data
 
+            binding.apply {
+                textView2.visibility = View.GONE
+                btnUploadImage.visibility = View.GONE
+                btnOkImage.apply {
+                    visibility = View.VISIBLE
+                    setOnClickListener {
+                        parentFragmentManager.beginTransaction().apply {
+                            replace(R.id.flMainFragment, MainPagesFragment())
+                                .addToBackStack("replacement")
+                                .addToBackStack("null")
+                                .commit()
+                        }
+                    }
+
+                }
+                imageP.apply {
+                    visibility = View.VISIBLE
+                    setImageURI(uri)
+                }
+            }
         }
     }
 

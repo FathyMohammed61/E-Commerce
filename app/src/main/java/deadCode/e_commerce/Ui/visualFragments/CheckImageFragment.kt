@@ -24,22 +24,7 @@ class CheckImageFragment : Fragment() {
         return binding.root
     }
 
-    fun getImage() {
-        binding.apply {
-            ivImage.setImageURI(imageRegister as Uri)
-        }
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 0 && resultCode == AppCompatActivity.RESULT_OK) {
-            binding.apply {
-                val uri = data?.data
-                ivImage.setImageURI(imageRegister as Uri)
-            }
 
 
-        }
-    }
 
 }
