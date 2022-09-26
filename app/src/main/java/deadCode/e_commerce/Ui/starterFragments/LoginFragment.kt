@@ -8,7 +8,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
 import deadCode.e_commerce.Ui.visualFragments.VisualSearchFragment
-import deadCode.e_commerce.controller.starterController.LoginController
+import deadCode.e_commerce.controller.starterController.LoginController.checkLoginEmail
 import deadCode.e_commerce.databinding.FragmentLoginBinding
 
 
@@ -16,7 +16,6 @@ class LoginFragment : Fragment() {
 
     private lateinit var binding: FragmentLoginBinding
 
-    private val loginController: LoginController = LoginController()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,7 +48,7 @@ class LoginFragment : Fragment() {
     private fun btnLogin() {
         binding.apply {
             btnLogin.setOnClickListener {
-                if (loginController.checkLoginEmail(
+                if (checkLoginEmail(
                         IdEmailLogin.text.toString(),
                         IdPasswordLogin.text.toString()
                     ) == 1

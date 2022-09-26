@@ -1,11 +1,11 @@
 package deadCode.e_commerce.controller.starterController
 
-import deadCode.e_commerce.model.data.DataBase
+import deadCode.e_commerce.model.data.DataBase.getCurrentUser
 
-class LoginController {
+object LoginController {
 
     fun checkLoginEmail(email: String, password: String): Int {
-        return if (email == DataBase.getCurrentUser().userName && password == DataBase.getCurrentUser().password || password.length < 8) 1 else 0
+        return if (email == getCurrentUser().userName && password == getCurrentUser().password || password.length < 8) 1 else 0
     }
 
 

@@ -5,8 +5,8 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
-import deadCode.e_commerce.databinding.ActivityMainPagesBinding
 import deadCode.e_commerce.Ui.mainPagesFragments.MainPagesFragment
+import deadCode.e_commerce.databinding.ActivityMainPagesBinding
 
 @Suppress("DEPRECATION")
 class MainPagesActivity : AppCompatActivity() {
@@ -17,6 +17,8 @@ class MainPagesActivity : AppCompatActivity() {
         binding = ActivityMainPagesBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+        supportActionBar?.hide()
+        currentFragment(MainPagesFragment())
         toggleBetweenFragments()
     }
 
@@ -47,7 +49,7 @@ class MainPagesActivity : AppCompatActivity() {
 
 
 
-    fun currentFragment(fragment: Fragment) {
+   private fun currentFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.flMainPagesFragment, fragment)
             commit()

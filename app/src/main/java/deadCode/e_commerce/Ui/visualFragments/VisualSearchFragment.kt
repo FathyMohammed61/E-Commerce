@@ -54,8 +54,6 @@ open class VisualSearchFragment : Fragment() {
                     setOnClickListener {
                         parentFragmentManager.beginTransaction().apply {
                             replace(R.id.flMainFragment, MainPagesFragment())
-                                .addToBackStack("replacement")
-                                .addToBackStack("null")
                                 .commit()
                         }
                     }
