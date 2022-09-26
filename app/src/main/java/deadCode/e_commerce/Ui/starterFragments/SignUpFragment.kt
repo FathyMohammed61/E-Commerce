@@ -72,7 +72,7 @@ class SignUpFragment : Fragment() {
     //-------------------isPasswordSuccess---------------------//
     private fun isPasswordSuccess() {
         binding.apply {
-            if (!signUpController.isPasswordValid(IdPasswordSignup.text)) {
+            if (signUpController.isPasswordValid(IdPasswordSignup.text)) {
                 IdPasswordSignup.error = getString(R.string.error_password)
                 Toast.makeText(activity, "Please check your password", Toast.LENGTH_SHORT)
                     .show()
