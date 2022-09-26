@@ -2,7 +2,6 @@ package deadCode.e_commerce.Ui.starterFragments
 
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,9 +9,9 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
+import deadCode.e_commerce.Ui.activities.MainPagesActivity
 import deadCode.e_commerce.controller.starterController.SignUpController
 import deadCode.e_commerce.databinding.FragmentSignUpBinding
-import deadCode.e_commerce.Ui.mainPagesFragments.MainPagesFragment
 
 
 class SignUpFragment : Fragment() {
@@ -25,13 +24,13 @@ class SignUpFragment : Fragment() {
     ): View {
         binding = FragmentSignUpBinding.inflate(inflater)
         naveToLogin()
-        intentToLogin()
+        intentToLoginByText()
         joinWithFaceBook()
         return binding.root
     }
 
     ////---------------------------------intentToLogin----------------------------////
-    private fun intentToLogin() {
+    private fun intentToLoginByText() {
         binding.apply {
             tvHaveAnAccount.setOnClickListener {
                 parentFragmentManager.beginTransaction().apply {
@@ -47,18 +46,17 @@ class SignUpFragment : Fragment() {
     private fun naveToLogin() {
         binding.apply {
             btnSignUp.setOnClickListener {
-                if (!signUpController.isPasswordValid(IdPasswordSignup.text)) {
-                    IdPasswordSignup.error = getString(R.string.error_password)
-                    Toast.makeText(activity, "Please check your password", Toast.LENGTH_SHORT)
-                        .show()
-                } else {
-                    IdPasswordSignup.error = null
-                    parentFragmentManager.beginTransaction().apply {
-                        replace(R.id.flMainFragment, MainPagesFragment())
-                        commit()
-                    }
-                }
+                isEmailSuccess()
+                isPasswordSuccess()
+                isNameSuccess()
             }
+        }
+    }
+
+    //// Intent From Here to MainPagesFragment()::class.java
+    private fun naveToMainPages() {
+        Intent(context, MainPagesActivity::class.java).apply {
+            startActivity(this)
         }
     }
 
@@ -66,10 +64,54 @@ class SignUpFragment : Fragment() {
     private fun joinWithFaceBook() {
         binding.apply {
             fcSignUp.setOnClickListener {
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/"))
-                startActivity(intent)
+                Toast.makeText(context, "We Work in it", Toast.LENGTH_SHORT).show()
             }
         }
     }
+
+    //-------------------isPasswordSuccess---------------------//
+    private fun isPasswordSuccess() {
+        binding.apply {
+            if (!signUpController.isPasswordValid(IdPasswordSignup.text)) {
+                IdPasswordSignup.error = getString(R.string.error_password)
+                Toast.makeText(activity, "Please check your password", Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                IdPasswordSignup.error = null
+                naveToMainPages()
+            }
+        }
+    }
+
+    //------------------isEmailSuccess-------------------//
+    private fun isEmailSuccess() {
+        binding.apply {
+            if (signUpController.isEmailEmpty(IdEmailSignup.text)) {
+                IdEmailSignup.error = getString(R.string.error_mail)
+                Toast.makeText(activity, "Please check your Email", Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                IdEmailSignup.error = null
+                naveToMainPages()
+            }
+        }
+
+    }
+
+    //----------------------isNameSuccess------------------//
+    private fun isNameSuccess() {
+        binding.apply {
+            if (signUpController.isEmailEmpty(IdNameSignup.text)) {
+                IdNameSignup.error = getString(R.string.errorName)
+                Toast.makeText(activity, "Please check your Email", Toast.LENGTH_SHORT)
+                    .show()
+            } else {
+                IdNameSignup.error = null
+                naveToMainPages()
+            }
+        }
+
+    }
+
 
 }
