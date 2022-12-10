@@ -1,4 +1,4 @@
-package deadCode.e_commerce.Ui.visualFragments
+package deadCode.e_commerce.ui.visualFragments
 
 
 import android.app.Activity.RESULT_OK
@@ -9,7 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
-import deadCode.e_commerce.Ui.mainPagesFragments.MainPagesFragment
+import deadCode.e_commerce.ui.mainPagesFragments.MainPagesFragment
 import deadCode.e_commerce.databinding.FragmentVisualSearchBinding
 import deadCode.e_commerce.model.ComData.comImage.imageRegister
 

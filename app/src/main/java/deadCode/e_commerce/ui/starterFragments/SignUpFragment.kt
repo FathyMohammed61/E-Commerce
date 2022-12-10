@@ -1,4 +1,4 @@
-package deadCode.e_commerce.Ui.starterFragments
+package deadCode.e_commerce.ui.starterFragments
 
 
 import android.content.Intent
@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
-import deadCode.e_commerce.Ui.activities.MainPagesActivity
+import deadCode.e_commerce.ui.activities.MainPagesActivity
 import deadCode.e_commerce.controller.starterController.SignUpController
 import deadCode.e_commerce.databinding.FragmentSignUpBinding
 

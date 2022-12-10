@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:paddingHorizontal="12dp"
     app:chainUseRtl="false"
-    tools:context=".Ui.visualFragments.VisualSearchFragment">
+    tools:context=".ui.visualFragments.VisualSearchFragment">
 
     <TextView
         android:id="@+id/textView2"

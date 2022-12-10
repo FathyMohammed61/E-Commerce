@@ -1,11 +1,11 @@
-package deadCode.e_commerce.Ui.activities
+package deadCode.e_commerce.ui.activities
 
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
-import deadCode.e_commerce.Ui.mainPagesFragments.MainPagesFragment
+import deadCode.e_commerce.ui.mainPagesFragments.MainPagesFragment
 import deadCode.e_commerce.databinding.ActivityMainPagesBinding
 
 @Suppress("DEPRECATION")
@@ -46,7 +46,6 @@ class MainPagesActivity : AppCompatActivity() {
             true
         }
     }
-
 
 
    private fun currentFragment(fragment: Fragment) {

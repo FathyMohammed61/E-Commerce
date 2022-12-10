@@ -1,4 +1,4 @@
-package deadCode.e_commerce.Ui.starterFragments
+package deadCode.e_commerce.ui.starterFragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import deadCode.e_commerce.R
-import deadCode.e_commerce.Ui.visualFragments.VisualSearchFragment
+import deadCode.e_commerce.ui.visualFragments.VisualSearchFragment
 import deadCode.e_commerce.controller.starterController.LoginController.checkLoginEmail
 import deadCode.e_commerce.databinding.FragmentLoginBinding
 
